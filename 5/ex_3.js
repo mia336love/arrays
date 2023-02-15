@@ -3,5 +3,11 @@
 // На выводе программа должна выдать среднюю оценку по студентам
 // И оценку каждого студента буквой: <60 - F, <70 - D, <80 - C, <90 - B, <100 - A
 
-let students = [Kaito, Luka, Len, Miku];
+let students = ["Kaito", "Luka", "Len", "Miku"];
 let marks = [88, 79, 56, 99];
+
+let sum = 0;
+for (let i = 0; i < marks.length; i++) {
+  sum += marks[i] / marks.length;
+}
+console.log("Средняя оценка по студентам: " + sum);
