@@ -2,5 +2,8 @@
 // Пример: "Есть несколько товаров по $120 и $20 и $70 все они крутые" - > 120 20 70
 
 let str = "Есть несколько товаров по $120 и $20 и $70 все они крутые";
-let numOnly = parseInt(str.replace(/[^\d]/g, ""));
-console.log(numOnly);
+//let numOnly = parseInt(str.replace(/\d+/g, ""));
+//console.log(numOnly);
+
+let numPattern = /[0-9]+/g;
+console.log(str.match(numPattern).join(" "));
